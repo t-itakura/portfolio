@@ -2,72 +2,48 @@
   <v-container fluid>
     <div id="aboutme">
     <v-container
-    fluid
-    >
-    <v-card
-      class="mt-n12 mx-auto"
-    >
-    <v-card-title>About me</v-card-title>
-    <v-divider class="mx-4"></v-divider>
-    <v-card-text>
+    fluid fill-height>
+
+      <v-row>
+            <v-card-title>About me</v-card-title>
+      </v-row>
+    <v-divider class="mx-6"></v-divider>
       <v-row 
       class="mb-12"
       justify="space-around">
       <v-col
       :cols="8">
           <div class="body-1 mb-1">
-            1992年山梨生まれ
-            2015年電気通信大学を卒業後,株式会社ミライトにSEとして入社,
-            大手携帯会社の基地局データ管理システムの開発を担当
+            はじめまして itakuraと申します.<br>
+            2015年電気通信大学を卒業後
+            3社でエンジニアとして経験を積んできました.
+            これまで業務用システムの構築, ビッグデータ基盤構築, スマホアプリのフロントエンド,<br>
+            バックエンド開発,WebAPIの開発などを行ってきました.
           </div>
           <br>
           <div class="body-1 mb-1">
-            2017年株式会社セブン&amp;アイ・ネットメディアに入社
-            LOFTアプリの開発を担当
+            得意分野はバッチ開発, データ分析基盤の構築, データ活用(レポーティング)です.
           </div>
           <br>
           <div class="body-1 mb-1">
-            2019年株式会社ファンコミュニケーションズにデータ分析基盤エンジニアとして入社
-            社内向けにBIツールの導入開発管理,分析基盤の開発を担当
-          </div>
+            現在は業務支援SaaSの開発, DWHのGKE化に着手しています.
           <br>
-          <div class="body-1 mb-1">
-            得意分野はバッチ開発, データ分析基盤導入構築, データレポーティングなど
           </div>
                     
       </v-col>
       <v-col 
-      :cols="4"
-      
-      >
-      <v-avatar
-      title
-      size="248"
+      :cols="4"      
       >
       <v-img
-        class="grey lighten-1"
         src="https://cdn.vuetifyjs.com/images/profiles/marcus.jpg"
-        aspect-ratio="1.7"
-        fluid
-        max-width="300"
-        max-height="300"
+        max-height="248"
+        max-width="248"
       ></v-img>
-      </v-avatar>
       </v-col>
       </v-row>
-    </v-card-text>
-    <v-divider class="mx-4"></v-divider>
-    <v-card-text>
-      <v-card-actions>
-        <v-spacer></v-spacer>
-        <v-btn large rounded><v-icon>mdi-home</v-icon>About me</v-btn>
-        <v-btn large rounded><v-icon>mdi-account-circle</v-icon>Time Line</v-btn>
-        <v-btn large rounded><v-icon>mdi-folder</v-icon>Skill</v-btn>
-        <v-btn large rounded><v-icon>mdi-github</v-icon>Github</v-btn>
-      </v-card-actions>
-    </v-card-text>
-      </v-card>
-      </v-container>
+
+
+    </v-container>
     </div>
   </v-container>
 </template>

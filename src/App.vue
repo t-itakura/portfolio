@@ -3,7 +3,7 @@
   <v-app id="inspire">
     <v-card
       flat
-      height="200px"
+      height="100px"
       tile
     >
     <v-app-bar dark dense fixed>
@@ -26,24 +26,30 @@
     </v-app-bar>
     </v-card>
     <v-content>
-      <Index/>
+      <router-view/>
     </v-content>
+    <v-bottom-navigation app grow v-model="bottomNav">
+      <v-card-actions>
+        <v-spacer></v-spacer>
+        <v-btn large rounded to="/"><v-icon>mdi-home</v-icon>About me</v-btn>
+        <v-btn large rounded to="/timeline"><v-icon>mdi-account-circle</v-icon>Time Line</v-btn>
+        <v-btn large rounded to="/skill"><v-icon>mdi-folder</v-icon>Skill</v-btn>
+        <v-btn large rounded to="/github"><v-icon>mdi-github</v-icon>Github</v-btn>
+      </v-card-actions>
+    </v-bottom-navigation>
   </v-app>
   
 </template>
 
 <script>
-import Index from './components/Index';
-
 export default {
   name: 'App',
 
-  components: {
-    Index,
-  },
 
   data: () => ({
     hover: false,
+    links: [
+    ]
   }),
 };
 </script>
