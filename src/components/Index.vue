@@ -4,10 +4,24 @@
     <v-container
     fluid fill-height>
 
-      <v-row>
+      <v-row
+      class="mb-12"
+      justify="space-around">
             <v-card-title>About me</v-card-title>
       </v-row>
-    <v-divider class="mx-6"></v-divider>
+      <v-row
+      justify="center"
+      align-content="cneter"
+      >
+      <v-avatar
+      size="200"
+      class="elevation-4">
+      <v-img
+        src="https://cdn.vuetifyjs.com/images/profiles/marcus.jpg"
+      ></v-img>
+      </v-avatar>
+      </v-row>
+
       <v-row 
       class="mb-12"
       justify="space-around">
@@ -31,15 +45,7 @@
           </div>
                     
       </v-col>
-      <v-col 
-      :cols="4"      
-      >
-      <v-img
-        src="https://cdn.vuetifyjs.com/images/profiles/marcus.jpg"
-        max-height="248"
-        max-width="248"
-      ></v-img>
-      </v-col>
+
       </v-row>
 
 
