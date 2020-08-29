@@ -4,7 +4,11 @@
     dark
     dense
     >
+    <v-row
+    class="mb-12"
+    justify="space-around">
     <v-card-title>Skills</v-card-title>
+    </v-row>
     <v-card
       class="mx-auto"
     >
@@ -23,10 +27,12 @@
             v-for="item in items"
             :key="item.level"
           >
-            <v-list-item-icon v-for="level in 5" :key="level">
+          <v-list-item-icon>
+            <div v-for="level in 5" :key="level">
               <v-icon v-if="level<=item.level" color="yellow">mdi-star</v-icon>
               <v-icon v-else color="yellow">mdi-star-outline</v-icon>
-            </v-list-item-icon>
+            </div>
+          </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title v-text="item.description"></v-list-item-title>
             </v-list-item-content>
