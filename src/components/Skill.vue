@@ -16,6 +16,28 @@
     </v-card>
     <br>
     <v-divider class="mx-6"></v-divider>
+    
+    <v-card
+      class="mx-auto"
+    >
+    <v-card-title>certification</v-card-title>
+    <v-list disabled>
+      <v-list-item-group v-model="certification" color="primary">
+        <v-list-item
+        v-for="certification in certifications"
+        :key=certification.title
+        >
+        <v-list-item-icon>
+          <v-icon>mdi-calendar-text</v-icon><div class="mt-1 black--text font-weight-bold">{{certification.year}} date of certified</div>
+        </v-list-item-icon>
+        <v-list-item-content>
+          <v-list-item-title v-text="certification.title"></v-list-item-title>
+        </v-list-item-content>
+        </v-list-item>
+      </v-list-item-group>
+    </v-list>
+    </v-card>
+    <v-divider class="mx-6"></v-divider>
 
     <v-card
       class="mx-auto"
@@ -115,6 +137,13 @@ export default {
         { level: 3, description: 'サポートがあれば実施出来る'},
         { level: 4, description: '独力で実施できる,またはその経験あり'},
         { level: 5, description: '他者を指導できる、またはその経験あり'},
+    ],
+    certifications: [
+      { title: 'CCENT', year: '2015/05'},
+      { title: 'Java SE7 Silver', year: '2016/01'},
+      { title: 'Oracle Bronze', year: '2016/10'},
+      { title: 'Java SE7 Gold', year: '2017/01'},
+      { title: 'LPIC Level1', year: '2017/05'}
     ]
     })
 }
