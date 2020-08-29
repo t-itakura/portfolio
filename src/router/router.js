@@ -11,17 +11,17 @@ export default new Router({
   mode: "history",
   routes: [
       {
-          path: '/portfolio',
+          path: '/',
           name: 'Index',
           component: Index
       },
       {
-        path: '/portfolio/skill',
+        path: '/skill',
         name: 'Skill',
         component: Skill
       },
       {
-        path: '/portfolio/timeline',
+        path: '/timeline',
         name: 'Timeline',
         component: Timeline
       }
