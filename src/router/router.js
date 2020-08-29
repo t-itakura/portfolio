@@ -10,18 +10,19 @@ Vue.use(Router);
 export default new Router({
   mode: "history",
   routes: [
+
       {
-          path: '/',
+          path: '/portfolio',
           name: 'Index',
           component: Index
       },
       {
-        path: '/skill',
+        path: '/portfolio/skill',
         name: 'Skill',
         component: Skill
       },
       {
-        path: '/timeline',
+        path: '/portfolio/timeline',
         name: 'Timeline',
         component: Timeline
       }

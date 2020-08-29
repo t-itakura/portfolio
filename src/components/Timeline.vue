@@ -42,7 +42,7 @@
                   <p v-else>獲得スキル</p>
               </div>
               <div v-if="item.university" >
-                  <a href="http://entcog.c.ooco.jp/entcog/contents/symposium/date/2015/2-2-p.pdf">カーリングプレイヤの思考過程に関する認知科学的研究</a>
+                  <a href="http://entcog.c.ooco.jp/entcog/contents/symposium/date/2015/2-2-p.pdf" target="_blank" rel="noopener noreferrer">カーリングプレイヤの思考過程に関する認知科学的研究</a>
               </div>
               <div v-else>
                   {{item.skill}}
